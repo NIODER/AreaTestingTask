@@ -2,7 +2,7 @@
 -- А промежуточная таблица - catprod
 -- Идентификаторы хранятся в атрибутах с именем "id".
 SELECT (products.name, categories.name) FROM products
-INNER JOIN catprod
+LEFT JOIN catprod
 ON products.id = catprod.product_id
-LEFT JOIN categories
+INNER JOIN categories
 ON catprod.category_id = categories.id;
