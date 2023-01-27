@@ -5,4 +5,4 @@ SELECT (products.name, categories.name) FROM products
 INNER JOIN catprod
 ON products.id = catprod.product_id
 LEFT JOIN categories
-ON catprod.category_id = categories.id
+ON catprod.category_id = categories.id;
